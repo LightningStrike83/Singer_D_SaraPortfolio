@@ -1,9 +1,16 @@
+/* 1. Variables */
+/* 2. General Styles */
 .hidden {
   display: none;
 }
 
 .show {
   display: grid;
+}
+
+.line {
+  border-bottom: 3px solid #e48f78;
+  margin-bottom: 100px;
 }
 
 a {
@@ -27,8 +34,24 @@ li {
   padding-bottom: 25px;
 }
 
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+  color: #cc6a28;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif;
+  color: #e5927c;
+  font-size: 14px;
+}
+
+/* 3. Nav */
 header {
   background-color: #f4d1c7;
+  box-shadow: 0 2px;
 }
 header .logo {
   display: flex;
@@ -58,14 +81,129 @@ header .work-links ul li {
   padding-left: 10px;
 }
 
+/* 4. About */
+#about-sunbiscuit {
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+#about-text {
+  text-align: center;
+}
+
+#about-pic {
+  margin-bottom: 30px;
+}
+
+#desc {
+  font-weight: bold;
+  border-bottom: 3px solid;
+  color: #cc6a28;
+  margin-bottom: 15px;
+  padding-bottom: 5px;
+}
+
+#desc-text {
+  text-align: left;
+  line-height: 1.8em;
+}
+
+#sm-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.sm-button {
+  width: 146px;
+  height: 42px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  border: 1px solid #e48f78;
+  border-radius: 30px;
+  background-color: #e48f78;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+.sm-button a {
+  color: white;
+  font-weight: normal;
+}
+.sm-button:hover {
+  background-color: #f2cac0;
+}
+.sm-button:hover a {
+  color: #cf7134;
+  text-decoration: none;
+}
+
+#email-sunbiscuit p {
+  text-decoration: underline;
+  margin-bottom: 30px;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Footer */
+.credit {
+  text-align: center;
+}
+
+.up-arrow {
+  border: 2px solid #cc6a28;
+  text-align: center;
+  padding-top: 4px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.up-arrow a {
+  font-weight: normal;
+  text-decoration: none;
+}
+.up-arrow:hover {
+  background-color: #e48f78;
+}
+.up-arrow:hover a {
+  color: white;
+}
+
+.footer {
+  margin-bottom: 50px;
+}
+
 @media screen and (min-width: 768px) {
   a {
     font-size: 22px;
+  }
+  h3 {
+    font-size: 37px;
+  }
+  p {
+    font-size: 18px;
   }
   .sb-logo {
     height: 100%;
   }
   header .logo img {
     padding-bottom: 10px;
+  }
+  #about-sunbiscuit {
+    margin-top: 100px;
+  }
+  #email-sunbiscuit p {
+    font-size: 22px;
+  }
+  #about-pic {
+    display: flex;
+    justify-content: center;
+  }
+  #about-text {
+    order: -1;
+  }
+  .up-arrow {
+    padding-top: 9px;
   }
 }/*# sourceMappingURL=main.css.map */

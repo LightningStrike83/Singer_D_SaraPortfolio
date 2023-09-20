@@ -1,5 +1,12 @@
+/* 1. Variables */
+
 $header-color: #f4d1c7;
 $font-color: #d5883a;
+$strong-color: #cc6a28;
+$p-text: #e5927c;
+$button-color: #e48f78;
+
+/* 2. General Styles */
 
 .hidden {
     display: none;
@@ -7,6 +14,11 @@ $font-color: #d5883a;
 
 .show {
     display: grid;
+}
+
+.line {
+    border-bottom: 3px solid $button-color;
+    margin-bottom: 100px;
 }
 
 a {
@@ -30,8 +42,25 @@ li {
     padding-bottom: 25px;
 }
 
+h3 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: $strong-color;
+}
+
+p {
+    font-family: Helvetica, Arial, sans-serif;
+    color: $p-text;
+    font-size: 14px;
+}
+
+/* 3. Nav */
+
 header {
     background-color: $header-color;
+    box-shadow: 0 2px;
     .logo {
         display: flex;
         justify-content: center;
@@ -62,11 +91,114 @@ header {
                 padding-left: 10px;
             }
         }
+}
+
+/* 4. About */
+
+#about-sunbiscuit {
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+#about-text {
+    text-align: center;
+}
+
+#about-pic {
+    margin-bottom: 30px;
+}
+
+#desc {
+    font-weight: bold;
+    border-bottom: 3px solid;
+    color: $strong-color;
+    margin-bottom: 15px;
+    padding-bottom: 5px;
+}
+
+#desc-text {
+    text-align: left;
+    line-height: 1.8em;
+}
+
+#sm-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+}
+
+.sm-button {
+    width: 146px;
+    height: 42px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    border: 1px solid $button-color;
+    border-radius: 30px;
+    background-color: $button-color;
+    margin-bottom: 10px;
+    cursor: pointer;
+    a {
+        color: white;
+        font-weight: normal;
     }
+    &:hover {
+        background-color: #f2cac0;
+        a {
+            color: #cf7134;
+            text-decoration: none;
+        }
+    }
+}
+
+#email-sunbiscuit p {
+    text-decoration: underline;
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Footer */
+
+.credit {
+    text-align: center;
+}
+
+.up-arrow {
+    border: 2px solid $strong-color;
+    text-align: center;
+    padding-top: 4px;
+    border-radius: 30px;
+    cursor: pointer;
+    a {
+        font-weight: normal;
+        text-decoration: none;
+    }
+    &:hover {
+        background-color: $button-color;
+        a {
+            color: white;
+        }
+    }
+}
+
+.footer {
+    margin-bottom: 50px;
+}
 
 @media screen and (min-width: 768px) {
     a {
         font-size: 22px;
+    }
+
+    h3 {
+        font-size: 37px;
+    }
+
+    p {
+        font-size: 18px;
     }
 
     .sb-logo {
@@ -79,5 +211,26 @@ header {
                 padding-bottom: 10px;
             }
         }
+    }
+
+    #about-sunbiscuit {
+        margin-top: 100px;
+    }
+
+    #email-sunbiscuit p {
+        font-size: 22px;
+    }
+
+    #about-pic {
+        display: flex;
+        justify-content: center;
+    }
+
+    #about-text {
+        order: -1;
+    }
+
+    .up-arrow {
+        padding-top: 9px;
     }
 }

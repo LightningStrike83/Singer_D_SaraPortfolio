@@ -147,6 +147,29 @@ header .work-links ul li {
   font-size: 18px;
 }
 
+/* 5. Commissions */
+.commission-button {
+  background-color: #e48f78;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 1px solid #e48f78;
+  border-radius: 30px;
+}
+.commission-button a {
+  color: white;
+  font-weight: normal;
+  font-size: 18px;
+}
+.commission-button:hover {
+  background-color: #f2cac0;
+}
+.commission-button:hover a {
+  color: #cf7134;
+  text-decoration: none;
+}
+
 /* Footer */
 .credit {
   text-align: center;

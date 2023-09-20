@@ -160,6 +160,30 @@ header {
     font-size: 18px;
 }
 
+/* 5. Commissions */
+
+.commission-button {
+    background-color: $button-color;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 1px solid $button-color;
+    border-radius: 30px;
+    a {
+        color: white;
+        font-weight: normal;
+        font-size: 18px;
+    }
+    &:hover {
+        background-color: #f2cac0;
+        a {
+            color: #cf7134;
+            text-decoration: none;
+        }
+    }
+}
+
 /* Footer */
 
 .credit {

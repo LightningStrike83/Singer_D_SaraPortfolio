@@ -1,7 +1,71 @@
 .hidden {
-    display: none;
+  display: none;
 }
 
-body {
-    margin: 0 auto;
+.show {
+  display: grid;
 }
+
+a {
+  color: #d5883a;
+  text-decoration: none;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+a:visited {
+  color: #d5883a;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+li {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+
+header {
+  background-color: #f4d1c7;
+}
+header .logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 10px;
+}
+header .nav-links {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  justify-content: space-around;
+}
+header .work-links ul li {
+  z-index: 5;
+}
+
+.sb-logo {
+  height: 50%;
+}
+
+.work-links ul {
+  background-color: transparent;
+  border: 1px transparent;
+  border-radius: 20px;
+}
+.work-links ul li {
+  padding-left: 10px;
+}
+
+@media screen and (min-width: 768px) {
+  a {
+    font-size: 22px;
+  }
+  .sb-logo {
+    height: 100%;
+  }
+  header .logo img {
+    padding-bottom: 10px;
+  }
+}/*# sourceMappingURL=main.css.map */

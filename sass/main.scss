@@ -206,6 +206,44 @@ header {
     }
 }
 
+#commissions-area {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.comm-image {
+    display: flex;
+    justify-content: center;
+}
+
+#contact-button {
+    margin-bottom: 30px;
+}
+
+#contact-comm {
+    background-color: transparent;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+    border: 3px solid $strong-color;
+    border-radius: 30px;
+    a {
+        color: $strong-color;
+        font-weight: normal;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    &:hover {
+        background-color: $button-color;
+        border: 3px solid $button-color;
+        a {
+            color: white;
+            text-decoration: none;
+        }
+    }
+}
+
 /* Footer */
 
 .credit {
@@ -278,5 +316,9 @@ header {
 
     .up-arrow {
         padding-top: 9px;
+    }
+
+    #reorder-image {
+        order: -1;
     }
 }

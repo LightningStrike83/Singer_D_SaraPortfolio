@@ -8,6 +8,10 @@ $button-color: #e48f78;
 
 /* 2. General Styles */
 
+body {
+    background-image: url(../images/Wallpaper.png);
+}
+
 .hidden {
     display: none;
 }
@@ -93,7 +97,25 @@ header {
         }
 }
 
-/* 4. About */
+/* 4. Index */ 
+
+.portfolio-image {
+    height: 350px;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#image-1 {
+    background-image: url(../images/profile.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#image-2 {
+    background-image: url(../images/Jirachi_wallpaper.png);
+}
+
+/* 5. About */
 
 #about-sunbiscuit {
     margin-top: 30px;
@@ -160,7 +182,7 @@ header {
     font-size: 18px;
 }
 
-/* 5. Commissions */
+/* 6. Commissions */
 
 .commission-button {
     background-color: $button-color;

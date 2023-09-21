@@ -170,6 +170,44 @@ header .work-links ul li {
   text-decoration: none;
 }
 
+#commissions-area {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.comm-image {
+  display: flex;
+  justify-content: center;
+}
+
+#contact-button {
+  margin-bottom: 30px;
+}
+
+#contact-comm {
+  background-color: transparent;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  border: 3px solid #cc6a28;
+  border-radius: 30px;
+}
+#contact-comm a {
+  color: #cc6a28;
+  font-weight: normal;
+  font-size: 18px;
+  font-weight: bold;
+}
+#contact-comm:hover {
+  background-color: #e48f78;
+  border: 3px solid #e48f78;
+}
+#contact-comm:hover a {
+  color: white;
+  text-decoration: none;
+}
+
 /* Footer */
 .credit {
   text-align: center;
@@ -228,5 +266,8 @@ header .work-links ul li {
   }
   .up-arrow {
     padding-top: 9px;
+  }
+  #reorder-image {
+    order: -1;
   }
 }/*# sourceMappingURL=main.css.map */

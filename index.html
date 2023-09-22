@@ -39,12 +39,21 @@
     </div>
 
     <section class="grid-con" id="gallery-images">
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-1"></div>
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-2"></div>
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-3"></div>
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-4"></div>
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-5"></div>
-        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-6"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-1" data-member="0"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-2" data-member="1"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-3" data-member="2"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-4" data-member="3"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-5" data-member="4"></div>
+        <div class="col-span-2 m-col-span-4 portfolio-image" id="image-6" data-member="5"></div>
+    </section>
+
+    <section id="other-buttons" class="grid-con">
+        <div id="other-links" class="col-span-full">
+            <div class="link-button"><a href="twitch-works.html">Twitch</a></div>
+            <div class="link-button"><a href="animation.html">Animation/Gifs</a></div>
+            <div class="link-button"><a href="reference-sheets.html">Reference Sheets</a></div>
+            <div class="link-button"><a href="backgrounds.html">Backgrounds</a></div>
+        </div>
     </section>
 
     <section class="vertical-line full-width-grid-con">
@@ -60,7 +69,14 @@
             <a href="index.html#top">^</a>
         </div>
     </footer>
+
+    <section class="lightbox full-width-grid-con" id="gallery-lightbox">
+        <a href="" class="lb_close col-start-4 col-end-5 m-col-start-12 m-col-end-13">X</a>
+
+        <img class="lb-pic col-span-full" id="gallery-pic" src="#" alt="Selected Work">
+    </section>
     
+    <script src="js/commissions.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
